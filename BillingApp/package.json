@@ -1,0 +1,40 @@
+{
+  "name": "billingapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf wwwroot/assets",
+    "build": "SET \"NODE_ENV=production\" && npm run clean && webpack --config=webpack.prod.js -p",
+    "serve": "webpack-dev-server --config=webpack.dev.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^15.0.35",
+    "@types/react-dom": "^15.5.1",
+    "@types/typescript": "^2.0.0",
+    "mobx": "^3.2.0",
+    "mobx-react": "^4.2.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router": "^4.1.1",
+    "webpack-env": "^0.8.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "typescript": "^2.4.1",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1",
+    "ts-loader": "^2.2.2",
+    "webpack-closure-compiler": "^2.1.4",
+    "webpack-stream": "^3.2.0",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.3",
+    "optimize-css-assets-webpack-plugin": "^2.0.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "css-loader": "^0.28.4"
+  }
+}

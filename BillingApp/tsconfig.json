@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./wwwroot/assets",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react"
+  },
+  "files": [
+    "./billingApp/ts/app.tsx"
+    //"./typings/index.d.ts"
+  ],
+  "include":[
+      "./billingApp/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}
