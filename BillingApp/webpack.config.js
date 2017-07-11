@@ -20,7 +20,8 @@ module.exports = {
     },
     devtool: PROD ? 'source-map': 'eval',
     output: {
-        path: DIST_DIR
+        path: DIST_DIR,
+        libraryTarget: "commonjs"
     },
     resolve:{
         extensions:['.js', '.ts', 'jsx', '.tsx'] //remove the need to import using .jsx extensions
